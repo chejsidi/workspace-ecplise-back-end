@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Fri Dec 02 08:05:12 CET 2022
+org.eclipse.jst.jee.server\:Preguntas=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Preguntas
+org.eclipse.jst.jee.server\:EJ1_servlet=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\EJ1_servlet
+org.eclipse.jst.jee.server\:Servlet1=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Servlet1

@@ -1,0 +1,52 @@
+
+package servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(name="ServletLeeDatos", urlPatterns = {"/ServletLeeDatos"})
+public class ServletLeeDatos extends HttpServlet{  
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException{
+        //Obtener datos del formulario
+        request.setCharacterEncoding("utf-8");
+        String fahrenheit = request.getParameter("fahrenheit"); 
+        if(request.getParameter("aFahrenheit")!=null){	// Como isset pero para JSP.
+        	String celsius = request.getParameter("celsius");
+        	if(celsius != null) {
+        		//Crear respuesta de error
+                response.setContentType("text/html;charset=UTF-8");
+                PrintWriter out = response.getWriter();
+                out.println("<html>"); 
+                out.println("<head><title>CONVERSION</title></head>");
+                out.println("<body>");
+                out.println("<p style=\'border: 1px solid black;'><strong>ERROR:</strong> Debes indicar los grados celsius.</p>");
+                out.println("</body>");
+                out.println("</html>");
+        	}else{
+        		//Crear respuesta de error
+                response.setContentType("text/html;charset=UTF-8");
+                PrintWriter out = response.getWriter();
+                try {
+                    out.println("<html>"); 
+                    out.println("<head><title>CONVERSION</title></head>");
+                    out.println("<body>");
+                    out.println("<p style=\'border: 1px solid black;'><strong>ERROR:</strong> Debes indicar los grados celsius.</p>");
+                    out.println("</body>");
+                    out.println("</html>");
+                }finally {
+                }
+        	}
+        }
+         
+    }
+}

@@ -1,0 +1,17 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <title>ConversorHTML</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Conversor</h1>
+        <form method="get" action="/EJ1_servlet/ServletConversor">
+            Grados Celsius: <input type="number" name="celsius"><br>
+            Grados Fahrenheit: <input type="number" name="fahrenheit"><br>
+            Edad: 
+            <input type="submit" name="aFahrenheit" value="Cel-Fah">
+            <input type="submit" name="aCelsius" value="Fah-Cel">
+        </form>
+    </body>
+</html>
