@@ -63,7 +63,7 @@ public class ServletPrepararProductos extends HttpServlet {
                 if (todoBn) {
                 	mapa.put(categoria, arrProductos);
                 	session.setAttribute("sMapa", mapa);
-//                	request.getRequestDispatcher("/compra.jsp").forward(request, response);
+//                	 request.getRequestDispatcher("/compra.jsp").forward(request, response);
                 	response.sendRedirect("/compra.jsp");
 				}else {
 					session.setAttribute("sMapa", null);
