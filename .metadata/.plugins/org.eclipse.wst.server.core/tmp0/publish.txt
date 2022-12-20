@@ -1,4 +1,5 @@
 #Tomcat publish data
-#Mon Dec 12 10:54:29 CET 2022
-org.eclipse.jst.jee.server\:EJ1_servlet=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\EJ1_servlet
+#Tue Dec 20 10:02:03 CET 2022
+org.eclipse.jst.jee.server\:Ej1_JSP=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Ej1_JSP
+org.eclipse.jst.jee.server\:Ej1_sesiones=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Ej1_sesiones
 org.eclipse.jst.jee.server\:Ej0_sesiones=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Ej0_sesiones
