@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Ej1_sesiones" path="/Ej1_sesiones" reloadable="true" source="org.eclipse.jst.jee.server:Ej1_sesiones"/><Context docBase="Ej0_sesiones" path="/Ej0_sesiones" reloadable="true" source="org.eclipse.jst.jee.server:Ej0_sesiones"/><Context docBase="Ej1_JSP" path="/Ej1_JSP" reloadable="true" source="org.eclipse.jst.jee.server:Ej1_JSP"/><Context docBase="Ej2_JSP" path="/Ej2_JSP" reloadable="true" source="org.eclipse.jst.jee.server:Ej2_JSP"/></Host>
+      <Context docBase="Ej1_sesiones" path="/Ej1_sesiones" reloadable="true" source="org.eclipse.jst.jee.server:Ej1_sesiones"/><Context docBase="Ej0_sesiones" path="/Ej0_sesiones" reloadable="true" source="org.eclipse.jst.jee.server:Ej0_sesiones"/><Context docBase="Ej1_JSP" path="/Ej1_JSP" reloadable="true" source="org.eclipse.jst.jee.server:Ej1_JSP"/><Context docBase="Ej2_JSP" path="/Ej2_JSP" reloadable="true" source="org.eclipse.jst.jee.server:Ej2_JSP"/><Context docBase="Ejer2_WPTests" path="/Ejer2_WPTests" reloadable="true" source="org.eclipse.jst.jee.server:Ejer2_WPTests"/><Context docBase="JSLT_CuentaBancaria" path="/JSLT_CuentaBancaria" reloadable="true" source="org.eclipse.jst.jee.server:JSLT_CuentaBancaria"/></Host>
     </Engine>
   </Service>
 </Server>

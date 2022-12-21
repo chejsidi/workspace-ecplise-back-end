@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>EJ2 JSP</title>
 </head>
 <body>
 	<form action="compra.jsp" method="post">
@@ -27,24 +27,26 @@
 						out.print("<td><button type='submit' name='btn' value='"+producto+"'>Adquirir unidad</button></td>"); 
 						if(request.getParameter("btn") != null) {
 							String productoPulsado = request.getParameter("btn");
-							if(productoPulsado.equals(producto)) {
-								if(session.getAttribute("sHistorial") != null) {
-									historial = (HashMap<String, Integer>) session.getAttribute("sHistorial");
-								}else {
-									session.setAttribute("sHistorial", historial);
-								} 
+							if(session.getAttribute("sHistorial") != null) {
+								historial = (HashMap<String, Integer>) session.getAttribute("sHistorial");
+							}else {
+								session.setAttribute("sHistorial", historial);
+							} 
+							if(productoPulsado.equals(producto)) { 
 								if(historial.containsKey(producto)) {
 									int cant = historial.get(producto);
 									cant++;
 									historial.put(producto, cant);
-									session.setAttribute("sHistorial", historial);
-									out.print("<td> "+cant+" unidades</td");
+									session.setAttribute("sHistorial", historial); 
 								}else {
 									historial.put(producto, 1);
-									session.setAttribute("sHistorial", historial);
-									out.print("<td> 1 unidad</td");
+									session.setAttribute("sHistorial", historial); 
 								} 
-							} 
+							}
+							if(historial.containsKey(producto)) {
+								int cant = historial.get(producto);
+								out.print("<td> "+cant+" unidades</td");
+							}
 						}
 						out.print("<tr>");
 					}
@@ -55,5 +57,6 @@
 			
 		</table>
 	</form>
+	<%@include file="muestracarro.jsp"%>
 </body>
 </html>
