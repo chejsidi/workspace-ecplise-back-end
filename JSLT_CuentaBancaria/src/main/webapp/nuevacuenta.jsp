@@ -1,18 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+    pageEncoding="ISO-8859-1"%> 
+<%@ page session="true" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>nuevacuenta</title>
 </head>
-<body> 
-	<%
-		if() {
-			
-		}
-	%>
+<body>    
+	<c:if test="${sessionScope.sListaErrores != null}">  
+			<c:out value="${sessionScope.sListaErrores}"/>
+			<c:set var="sListaErrores" scope="session"></c:set>
+	</c:if> 
 	<form action="${pageContext.request.contextPath}/ServletNuevaCuenta" method="get"> 
 		Titular:<input type="text" name="titular" required="required" /><br/> 
 		Saldo inicial:<input type="number" name="saldoIni" required="required" /><br/> 
