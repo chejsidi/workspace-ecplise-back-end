@@ -19,4 +19,5 @@
     <fullyQualifiedTypeName name="javax.websocket.Session"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
 </qualifiedTypeNameHistroy>
