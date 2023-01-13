@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.logging.Level;
@@ -29,7 +30,25 @@ public class GestorBD {
         //Indicamos el tamaño del pool de conexiones
         dataSource.setInitialSize(50);
     }
-    
+    public ArrayList<String> libros(int idautor){
+    	 ArrayList<String> libros = new ArrayList<String>();
+         String sql = "SELECT * FROM libro WHERE idautor = " + idautor;
+         try {
+             Connection con = dataSource.getConnection();
+             Statement st = con.createStatement();
+             ResultSet rs = st.executeQuery(sql);
+             while(rs.next()){
+                 String libro = rs.getString("titulo");
+                 libros.add(libro);
+             }
+             rs.close();
+             st.close();
+             con.close();
+         } catch (SQLException ex) {
+             System.err.println("Error en metodo libros: " + ex);
+         }
+         return libros;
+    }
     public ArrayList<Autor> autores(){
         ArrayList<Autor> autores = new ArrayList<Autor>();
         String sql = "SELECT * FROM autor";
@@ -38,14 +57,14 @@ public class GestorBD {
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(sql);
             while(rs.next()){
-                Autor autor = new Autor(rs.getString("nombre"), rs.getDate("fechanac"), rs.getString("	nacionalidad"));
+                Autor autor = new Autor(rs.getInt("id"), rs.getString("nombre"), rs.getDate("fechanac"), rs.getString("nacionalidad"));
                 autores.add(autor);
             }
             rs.close();
             st.close();
             con.close();
         } catch (SQLException ex) {
-            System.err.println("Error en metodo libros: " + ex);
+            System.err.println("Error en metodo autores: " + ex);
         }
         return autores;
     }
@@ -57,7 +76,9 @@ public class GestorBD {
             Connection con = dataSource.getConnection();
             PreparedStatement st = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS); 
             st.setString(1, autor.getNombre());
-            st.setDate(2, (Date) autor.getFechanac());
+            SimpleDateFormat formateador = new SimpleDateFormat("yyyy/MM/DD");
+            String fechastr = formateador.format(autor.getFechanac()); 
+            st.setString(2, fechastr);
             st.setString(3, autor.getNacionalidad());
             
             st.executeUpdate();
@@ -71,9 +92,20 @@ public class GestorBD {
             st.close();
             con.close();
         } catch (SQLException ex) {
-            System.err.println("Error en metodo insertarLibro: " + ex);
+            System.err.println("Error en metodo insertarAutor: " + ex);
         }
         
         return id;
+    } 
+    public boolean existeAutor(Autor autor){
+        boolean existe = false;
+        ArrayList<Autor> autores = autores();
+        for (Autor autorVal : autores) {
+        	if (autorVal.getNombre().equals(autor.getNombre())) {
+				existe = true;
+			}
+ 
+        }
+        return existe;
     }
 }

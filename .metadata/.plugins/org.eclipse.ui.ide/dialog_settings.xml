@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\dw2\Desktop\00Ejemplos"/>
 			<item value="C:\Users\dw2\Desktop\Preguntas"/>
 			<item value="C:\Users\dw2\Desktop\Servlet1"/>
 		</list>

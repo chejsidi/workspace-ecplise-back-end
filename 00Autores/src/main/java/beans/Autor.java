@@ -15,13 +15,18 @@ public class Autor {
     private String nombre;
     private Date fechanac;
     private String nacionalidad;
-
+    private int id;
     public Autor(String nombre, Date fechanac, String nacionalidad) { 
         this.nombre = nombre;
         this.fechanac = fechanac;
         this.nacionalidad = nacionalidad;
     }
-
+    public Autor(int id, String nombre, Date fechanac, String nacionalidad) { 
+    	this.id = id;
+        this.nombre = nombre;
+        this.fechanac = fechanac;
+        this.nacionalidad = nacionalidad;
+    }
     public Autor() {
     } 
 
@@ -48,6 +53,17 @@ public class Autor {
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
     }
+
+	public void setIdAutor(int id) {
+		this.setId(id);
+		
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
     
 }
 
