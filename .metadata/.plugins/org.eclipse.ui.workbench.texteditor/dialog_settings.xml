@@ -8,14 +8,14 @@
 		<item key="wrap" value="true"/>
 		<item key="incremental" value="false"/>
 		<list key="findhistory">
+			<item value="getAttribute"/>
+			<item value="integer"/>
+			<item value="jdbc/poolSubastasDB"/>
 			<item value="nombreBD"/>
 			<item value="autores"/>
 			<item value="libros"/>
 			<item value="no se ha podido"/>
 			<item value="existe"/>
-			<item value="historial"/>
-			<item value="HttpSession session = request.getSession();"/>
-			<item value="session"/>
 		</list>
 		<list key="replacehistory">
 		</list>

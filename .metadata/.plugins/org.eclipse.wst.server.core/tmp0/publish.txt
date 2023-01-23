@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Fri Jan 13 09:15:25 CET 2023
+#Mon Jan 23 09:57:25 CET 2023
 org.eclipse.jst.jee.server\:00Autores=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\00Autores
 org.eclipse.jst.jee.server\:Ej1_JSP=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Ej1_JSP
 org.eclipse.jst.jee.server\:JSLT_CuentaBancaria=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\JSLT_CuentaBancaria
@@ -7,5 +7,6 @@ org.eclipse.jst.jee.server\:Ej2_JSP=C\:\\Program Files\\Apache Software Foundati
 org.eclipse.jst.jee.server\:Ejer2_WPTests=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Ejer2_WPTests
 org.eclipse.jst.jee.server\:00Devoluciones=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\00Devoluciones
 org.eclipse.jst.jee.server\:Ej1_sesiones=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Ej1_sesiones
+org.eclipse.jst.jee.server\:00Bbdd=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\00Bbdd
 org.eclipse.jst.jee.server\:01Libreria=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\01Libreria
 org.eclipse.jst.jee.server\:Ej0_sesiones=C\:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\wtpwebapps\\Ej0_sesiones

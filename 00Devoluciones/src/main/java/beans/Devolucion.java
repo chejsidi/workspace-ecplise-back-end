@@ -5,19 +5,31 @@
  */
 package beans;
 
+import java.util.Date;
+
 public class Devolucion {
     private int idPrestamo;
-    private String fecha;
+    private Date fecha;
     private int idLibro;  
     private String tituloLibro;
-    public Devolucion(int idPrestamo, String fecha, int idLibro, String tituloLibro) {
+    private int dias;
+    public Devolucion(int idPrestamo, Date fecha, int idLibro, String titulo) {
     	this.idPrestamo = idPrestamo;
         this.fecha = fecha;
-        this.idLibro = idLibro; 
-        this.tituloLibro = tituloLibro;
+        this.idLibro = idLibro;  
+        tituloLibro = titulo;
+        dias = modificarFecha(fecha);
     }
     
-    public int getIdPrestamo() {
+    public int getDias() {
+		return dias;
+	}
+
+	public void setDias(int dias) {
+		this.dias = dias;
+	}
+
+	public int getIdPrestamo() {
 		return idPrestamo;
 	}
 
@@ -25,11 +37,11 @@ public class Devolucion {
 		this.idPrestamo = idPrestamo;
 	}
 
-	public String getFecha() {
+	public Date getFecha() {
 		return fecha;
 	}
 
-	public void setFecha(String fecha) {
+	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
 
@@ -48,9 +60,15 @@ public class Devolucion {
 	public void setTituloLibro(String tituloLibro) {
 		this.tituloLibro = tituloLibro;
 	}
-
+	
 	public Devolucion() {
     }
 
-   
+	private int modificarFecha(Date fecha) {
+		// La fecha actual
+		Date fechaactual = new Date(System.currentTimeMillis());
+		int milisecondsByDay = 86400000;
+		int dias = (int) ((fechaactual.getTime()-fecha.getTime()) / milisecondsByDay);
+		return dias;
+	}
 }
