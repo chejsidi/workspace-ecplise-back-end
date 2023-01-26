@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="beans.beanConversion"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="beans.AlmacenPalabras"/>
     <fullyQualifiedTypeName name="beans.Imagen"/>
@@ -18,7 +15,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="beans.Autor"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
-    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="dao.PoolConexiones"/>
     <fullyQualifiedTypeName name="dao.Consultas"/>
@@ -28,9 +24,7 @@
     <fullyQualifiedTypeName name="beans.Devolucion"/>
     <fullyQualifiedTypeName name="dao.PoolConexionesBasic"/>
     <fullyQualifiedTypeName name="dao.GestorBD"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.PreparableStatement"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
@@ -44,12 +38,26 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="beans.Cliente"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.IllegalFormatCodePointException"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="beans.Item"/>
     <fullyQualifiedTypeName name="beans.Pedido"/>
     <fullyQualifiedTypeName name="beans.LineaPedido"/>
+    <fullyQualifiedTypeName name="dao.ClienteDAO"/>
+    <fullyQualifiedTypeName name="dao.PedidoDAO"/>
+    <fullyQualifiedTypeName name="dao.KeysDAO"/>
+    <fullyQualifiedTypeName name="beans.Cliente"/>
+    <fullyQualifiedTypeName name="conex.ConexPoolBD"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="beans.Actividad"/>
+    <fullyQualifiedTypeName name="daos.ActividadesDao"/>
+    <fullyQualifiedTypeName name="beans.Alumno"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="daos.ParticipaDao"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="beans.Impartidor"/>
 </qualifiedTypeNameHistroy>
